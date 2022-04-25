@@ -1,0 +1,58 @@
+* {
+    
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+
+}
+
+.container {
+    display: grid;
+    grid-template:
+    "header header header" 50px
+    "profile post sidebar" 150px
+    "profile main sidebar" 1fr /
+    200px 1fr 250px;
+
+}
+
+.profile,
+.post,
+.sidebar,
+.main {
+    margin:20px;
+
+}
+
+
+.header{
+    grid-area: header;
+    background-color: white;
+    color: blue;
+    width: 100vw;
+
+}
+
+.profile {
+
+    grid-area: profile;
+    color:black;
+    background-color: white;
+    
+}
+
+.post {
+    grid-area:post;
+    background-color:white;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: white;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    height: 100vh;
+}
