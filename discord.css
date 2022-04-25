@@ -1,0 +1,58 @@
+* {
+    margin:0;
+    padding:0;
+
+    
+    box-sizing: border-box;
+
+}
+
+.container {
+    display:grid;
+
+    grid-template: 
+     "sidebar header toolbar" 50px
+     "sidebar cat main" 1fr
+     "sidebar cat chat" 50px
+     "sidebar footer chat" 50px/
+     70px 250px 1fr;
+     
+}
+
+.sidebar {
+    grid-area: sidebar;
+    height: 100vh;
+
+    background-color: gray;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: bisque;
+}
+
+.toolbar {
+    grid-area: toolbar;
+    background-color: gray;
+}
+
+.cat {
+    grid-area: cat;
+    background-color: azure;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: bisque;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: white;
+}
+
+.main {
+    grid-area: main;
+    background-color:antiquewhite;
+}
